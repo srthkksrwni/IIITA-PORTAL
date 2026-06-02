@@ -6,12 +6,10 @@ import SupportPillars from "./sections/SupportPillars";
 import NewsPreview from "./sections/NewsPreview";
 import CTASection from "./sections/CTASection";
 
-import Navbar from "../../components/layout/Navbar";
 
 function Home() {
   return (
     <>
-      <Navbar />
       <Hero />
       
       <WelcomeSection />
