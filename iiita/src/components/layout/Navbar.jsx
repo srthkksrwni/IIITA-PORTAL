@@ -1,116 +1,57 @@
 import { Link } from "react-router-dom";
-
-
 import MobileMenu from "./MobileMenu";
-
 
 function Navbar() {
   return (
-    <>
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#031225]/90 text-white shadow-lg shadow-blue-950/30 backdrop-blur-xl">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        
+        <Link to="/" className="flex items-center gap-3">
+          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-blue-800 text-lg font-extrabold shadow-lg shadow-blue-500/30">
+            T
+          </span>
 
-
-      <header className="sticky top-0 z-50 w-full border-b border-slate-200/60 bg-white/80 backdrop-blur">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link
-            to="/"
-            className="flex items-center gap-3"
-            aria-label="THRIVE @ IIITA"
-          >
-            <span
-              className="w-9 h-9 rounded-xl bg-blue-600 text-white font-bold flex items-center justify-center"
-              aria-hidden="true"
-            >
-              T
-            </span>
-            <div className="leading-tight">
-              <div className="font-bold text-slate-900">
-                THRIVE @ IIITA
-              </div>
-              <div className="text-xs text-slate-600">
-                Holistic Growth · Inclusive Care · Mental Wellness
-              </div>
+          <div className="leading-tight">
+            <div className="text-lg font-bold tracking-wide">
+              THRIVE @ IIITA
             </div>
+            <div className="text-xs text-blue-200">
+              Holistic Growth · Inclusive Care · Mental Wellness
+            </div>
+          </div>
+        </Link>
+
+        <nav className="hidden items-center gap-7 text-sm font-medium text-blue-100 lg:flex">
+          <Link to="/" className="transition hover:text-white">Home</Link>
+          <Link to="/about" className="transition hover:text-white">About</Link>
+          <Link to="/programs" className="transition hover:text-white">Programs</Link>
+          <Link to="/wellness" className="transition hover:text-white">Care & Wellness</Link>
+          <Link to="/resources" className="transition hover:text-white">Resources</Link>
+          <Link to="/news" className="transition hover:text-white">News</Link>
+          <Link to="/dashboard" className="transition hover:text-white">Dashboard</Link>
+          <Link to="/contact" className="transition hover:text-white">Contact</Link>
+        </nav>
+
+        <div className="hidden items-center gap-3 lg:flex">
+          <Link
+            to="/contact"
+            className="rounded-full border border-blue-300/30 px-5 py-2 text-sm font-semibold text-blue-100 transition hover:bg-white/10 hover:text-white"
+          >
+            Student Support
           </Link>
 
-          <div className="hidden lg:flex items-center gap-6 text-slate-700">
-            <Link to="/" className="hover:text-blue-700 font-medium">
-              Home
-            </Link>
-            <Link to="/about" className="hover:text-blue-700 font-medium">
-              About
-            </Link>
-
-            <div className="relative">
-              <button
-                type="button"
-                className="inline-flex items-center gap-2 hover:text-blue-700 font-medium"
-              >
-                Programs
-                <span aria-hidden="true">▾</span>
-              </button>
-              <div className="absolute left-0 top-full">
-                
-              </div>
-            </div>
-
-            <Link
-              to="/wellness"
-              className="hover:text-blue-700 font-medium"
-            >
-              Care & Wellness
-            </Link>
-
-            <Link
-              to="/resources"
-              className="hover:text-blue-700 font-medium"
-            >
-              Resources
-            </Link>
-
-            <Link
-              to="/news"
-              className="hover:text-blue-700 font-medium"
-            >
-              News & Events
-            </Link>
-
-            <Link
-              to="/dashboard"
-              className="hover:text-blue-700 font-medium"
-            >
-              Dashboard
-            </Link>
-
-            <Link
-              to="/contact"
-              className="hover:text-blue-700 font-medium"
-            >
-              Contact
-            </Link>
-          </div>
-
-          <div className="hidden lg:flex items-center gap-3">
-            <Link
-              to="/contact"
-              className="px-4 py-2 rounded-xl border border-blue-600/30 text-blue-700 hover:bg-blue-600/5 font-semibold text-sm"
-            >
-              Student Support
-            </Link>
-            <Link
-              to="/internships"
-              className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm"
-            >
-              Apply Now
-            </Link>
-          </div>
-
-          <MobileMenu />
+          <Link
+            to="/internships"
+            className="rounded-full bg-blue-500 px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-blue-500/30 transition hover:-translate-y-0.5 hover:bg-blue-400"
+          >
+            Apply Now
+          </Link>
         </div>
-      </header>
-    </>
+
+        <MobileMenu />
+      </div>
+    </header>
   );
 }
 
 export default Navbar;
-
-
