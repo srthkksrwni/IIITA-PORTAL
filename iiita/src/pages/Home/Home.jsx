@@ -8,7 +8,7 @@ function Home() {
       subtitle:
         "A unified student support platform for mentoring, wellness, internships, mobility and inclusive growth.",
       tag: "Office of the Professor-in-Charge · Est. 2026",
-      image: "/iiita-banner.jpg",
+      image: "../../../public/bg.jpg",
       primary: "Explore Programs",
       primaryLink: "/programs",
     },
@@ -17,7 +17,7 @@ function Home() {
       subtitle:
         "Connecting students with care systems, academic guidance, accessibility support and personal development resources.",
       tag: "Student-Centric Growth Ecosystem",
-      image: "/iiita-banner.jpg",
+      image: "../../../public/bg.jpg",
       primary: "Student Support",
       primaryLink: "/contact",
     },
@@ -26,7 +26,7 @@ function Home() {
       subtitle:
         "Helping students discover experiential learning, research exposure, exchange programs and career-building pathways.",
       tag: "Opportunities Beyond Classrooms",
-      image: "/iiita-banner.jpg",
+      image: "../../../public/bg.jpg",
       primary: "Browse Internships",
       primaryLink: "/internships",
     },
