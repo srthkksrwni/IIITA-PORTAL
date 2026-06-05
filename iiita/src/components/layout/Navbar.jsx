@@ -20,7 +20,7 @@ function Navbar() {
           </div>
         </Link>
 
-        <nav className="hidden items-center gap-7 text-sm font-medium text-blue-100 lg:flex">
+        <nav className="hidden items-center gap-7 text-sm font-medium text-blue-100 mx-6 lg:flex">
           <Link to="/" className="transition hover:text-white">Home</Link>
           <Link to="/about" className="transition hover:text-white">About</Link>
           <Link to="/programs" className="transition hover:text-white">Programs</Link>
@@ -31,7 +31,7 @@ function Navbar() {
           <Link to="/contact" className="transition hover:text-white">Contact</Link>
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center gap-3 lg:flex ml-8">
           <Link
             to="/contact"
             className="rounded-full border border-blue-300/30 px-5 py-2 text-sm font-semibold text-blue-100 transition hover:bg-white/10 hover:text-white"
