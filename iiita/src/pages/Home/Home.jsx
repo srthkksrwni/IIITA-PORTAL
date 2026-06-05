@@ -9,7 +9,7 @@ function Home() {
       subtitle:
         "A unified student support platform for mentoring, wellness, internships, mobility and inclusive growth.",
       tag: "Office of the Professor-in-Charge · Est. 2026",
-      image: "/bg5.png",
+      image: "/bg1.png",
       primary: "Explore Programs",
       primaryLink: "/programs",
     },
@@ -18,7 +18,7 @@ function Home() {
       subtitle:
         "Connecting students with care systems, academic guidance, accessibility support and personal development resources.",
       tag: "Student-Centric Growth Ecosystem",
-      image: "images/image_857934a5.png",
+      image: "/bg2.png",
       primary: "Student Support",
       primaryLink: "/contact",
     },
@@ -27,7 +27,7 @@ function Home() {
       subtitle:
         "Helping students discover experiential learning, research exposure, exchange programs and career-building pathways.",
       tag: "Opportunities Beyond Classrooms",
-      image: "../../../public/bg.jpg",
+      image: "/bg3.png",
       primary: "Browse Internships",
       primaryLink: "/internships",
     },
