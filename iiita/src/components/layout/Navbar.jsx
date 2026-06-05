@@ -33,10 +33,10 @@ function Navbar() {
 
         <div className="hidden items-center gap-3 lg:flex ml-8">
           <Link
-            to="/contact"
+            to="https://prayaas.iiita.ac.in/" target="_blank" 
             className="rounded-full border border-blue-300/30 px-5 py-2 text-sm font-semibold text-blue-100 transition hover:bg-white/10 hover:text-white"
           >
-            Student Support
+            Student Initiative
           </Link>
 
           <Link
