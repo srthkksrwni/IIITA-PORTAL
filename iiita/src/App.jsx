@@ -8,6 +8,11 @@ import Contact from "./pages/Contact";
 import Dashboard from "./pages/Dashboard";
 import Ecological from "./pages/Ecological";
 import Wellness from "./pages/Home/Wellness";
+import Resources from "./pages/Resources";
+import News from "./pages/News";
+import Responsibilities from "./pages/Responsibilities";
+import Programs from "./pages/Programs";
+// import mobility from "./pages/Mobility";
 
 function App() {
   return (
@@ -23,10 +28,10 @@ function App() {
           <Route path="/ecological" element={<Ecological />} />
           <Route path="/wellness" element={<Wellness />} />
           <Route path="/mobility" element={<mobility />} />
-          <Route path="/Resources" element={<Resources />} />
-          <Route path="/News" element={<News />} />
-          <Route path="/Responsibilities" element={<Responsibilities />} />
-          <Route path="/Programs" element={<Programs />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/responsibilities" element={<Responsibilities />} />
+          <Route path="/programs" element={<Programs />} />
           
 
           {/* other routes */}

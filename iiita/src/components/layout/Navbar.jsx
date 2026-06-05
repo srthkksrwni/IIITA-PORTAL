@@ -4,7 +4,7 @@ import MobileMenu from "./MobileMenu";
 function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#031225]/90 text-white shadow-lg shadow-blue-950/30 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-3 py-4">
         <Link to="/" className="flex items-center gap-3">
           <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-blue-800 text-lg font-extrabold shadow-lg shadow-blue-500/30">
             T
@@ -20,7 +20,7 @@ function Navbar() {
           </div>
         </Link>
 
-        <nav className="hidden items-center gap-7 text-sm font-medium text-blue-100 lg:flex">
+        <nav className="hidden items-center   px-5 gap-7 text-sm font-medium text-blue-100 lg:flex">
           <Link to="/" className="transition hover:text-white">Home</Link>
           <Link to="/about" className="transition hover:text-white">About</Link>
           <Link to="/programs" className="transition hover:text-white">Programs</Link>
