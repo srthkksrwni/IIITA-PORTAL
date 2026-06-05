@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Welcome from "./WelcomeMessage"
 
 function Home() {
   const slides = [
@@ -8,7 +9,7 @@ function Home() {
       subtitle:
         "A unified student support platform for mentoring, wellness, internships, mobility and inclusive growth.",
       tag: "Office of the Professor-in-Charge · Est. 2026",
-      image: "../../../public/bg.jpg",
+      image: "/bg5.png",
       primary: "Explore Programs",
       primaryLink: "/programs",
     },
@@ -17,7 +18,7 @@ function Home() {
       subtitle:
         "Connecting students with care systems, academic guidance, accessibility support and personal development resources.",
       tag: "Student-Centric Growth Ecosystem",
-      image: "../../../public/bg.jpg",
+      image: "images/image_857934a5.png",
       primary: "Student Support",
       primaryLink: "/contact",
     },
@@ -61,6 +62,7 @@ function Home() {
   const slide = slides[current];
 
   return (
+    <>
     <section className="relative overflow-hidden bg-[#031225] text-white">
       {/* Hero Carousel */}
       <div className="relative min-h-[720px] overflow-hidden">
@@ -177,6 +179,9 @@ function Home() {
         </div>
       </div>
     </section>
+
+    <Welcome/>
+    </>
   );
 }
 
