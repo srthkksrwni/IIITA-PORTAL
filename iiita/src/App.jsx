@@ -30,8 +30,8 @@ function App() {
           <Route path="/mobility" element={<mobility />} />
           <Route path="/Resources" element={<Resources />} />
           <Route path="/News" element={<News />} />
-          <Route path="/Responsibilities" element={<Responsibilities />} />
-          <Route path="/Programs" element={<Programs />} />
+          <Route path="/responsibilities" element={<Responsibilities />} />
+          <Route path="/programs" element={<Programs />} />
           
 
           {/* other routes */}

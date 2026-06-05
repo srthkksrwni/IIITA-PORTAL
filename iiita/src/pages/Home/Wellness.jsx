@@ -18,6 +18,8 @@ function Wellness() {
     <div className="min-h-screen bg-slate-50 text-slate-800">
       {/* Utility Bar */}
       <div className="bg-emerald-900 text-white text-sm">
+
+        
         <div className="max-w-7xl mx-auto px-4 py-2 flex justify-between gap-4 flex-wrap">
           <span>
             Indian Institute of Information Technology, Allahabad · An Institute
