@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Welcome from "./WelcomeMessage"
+import FeaturedInitiatives from "./FeaturedInitiatives";
+
 
 function Home() {
   const slides = [
@@ -181,6 +183,7 @@ function Home() {
     </section>
 
     <Welcome/>
+    <FeaturedInitiatives/>
     </>
   );
 }
