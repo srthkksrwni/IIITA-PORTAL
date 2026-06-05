@@ -23,6 +23,11 @@ function App() {
           <Route path="/ecological" element={<Ecological />} />
           <Route path="/wellness" element={<Wellness />} />
           <Route path="/mobility" element={<mobility />} />
+          <Route path="/Resources" element={<Resources />} />
+          <Route path="/News" element={<News />} />
+          <Route path="/Responsibilities" element={<Responsibilities />} />
+          <Route path="/Programs" element={<Programs />} />
+          
 
           {/* other routes */}
         </Route>
