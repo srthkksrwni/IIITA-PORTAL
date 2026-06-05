@@ -4,6 +4,9 @@ import MainLayout from "./layouts/MainLayout";
 
 import Home from "./pages/Home/Home";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Dashboard from "./pages/Dashboard";
+import Ecological from "./pages/Ecological";
 
 function App() {
   return (
@@ -14,7 +17,9 @@ function App() {
           
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/ecological" element={<Ecological />} />
           {/* other routes */}
         </Route>
       </Routes>
