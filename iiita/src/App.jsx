@@ -7,16 +7,16 @@ import Home from "./pages/Home/Home";
 
 function App() {
   return (
+<>
     <HashRouter>
       <Routes>
         <Route element={<MainLayout />}>
           
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} /> </Route>
           
-          {/* other routes */}
-        </Route>
       </Routes>
     </HashRouter>
+    </>
   );
 }
 

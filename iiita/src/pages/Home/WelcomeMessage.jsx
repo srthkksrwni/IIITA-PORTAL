@@ -3,15 +3,18 @@ function WelcomeMessage() {
     <section className="bg-[#031225] px-6 py-20 text-white lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-10 rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 shadow-2xl shadow-blue-950/30 backdrop-blur-xl lg:grid-cols-[0.85fr_1.15fr] lg:p-10">
-          
           {/* Portrait Card */}
           <div className="relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-gradient-to-br from-blue-500/20 via-blue-900/30 to-slate-950 p-8 shadow-xl">
             <div className="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-blue-500/20 blur-3xl" />
             <div className="absolute -bottom-16 -left-16 h-48 w-48 rounded-full bg-cyan-400/10 blur-3xl" />
 
             <div className="relative flex min-h-[420px] flex-col items-center justify-center text-center">
-              <div className="flex h-40 w-40 items-center justify-center rounded-full border border-white/20 bg-white/10 text-5xl font-extrabold text-blue-100 shadow-2xl backdrop-blur-md">
-                SA
+              <div className="h-48 w-48 overflow-hidden rounded-full border-4 border-blue-400/30 shadow-2xl shadow-blue-500/20">
+                <img
+                  src="/Sonali Maam.jpg"
+                  alt="Prof. Sonali Agarwal"
+                  className="h-full w-full object-cover"
+                />
               </div>
 
               <div className="mt-8 rounded-2xl border border-white/10 bg-white/10 px-6 py-4 backdrop-blur-md">
