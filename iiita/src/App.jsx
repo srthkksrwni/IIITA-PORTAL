@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Dashboard from "./pages/Dashboard";
 import Ecological from "./pages/Ecological";
+import Wellness from "./pages/Home/Wellness";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/ecological" element={<Ecological />} />
+          <Route path="/wellness" element={<Wellness />} />
+          <Route path="/mobility" element={<mobility />} />
+
           {/* other routes */}
         </Route>
       </Routes>
