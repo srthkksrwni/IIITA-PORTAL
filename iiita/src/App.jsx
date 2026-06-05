@@ -12,7 +12,6 @@ import Resources from "./pages/Resources";
 import News from "./pages/News";
 import Responsibilities from "./pages/Responsibilities";
 import Programs from "./pages/Programs";
-// import mobility from "./pages/Mobility";
 
 function App() {
   return (
