@@ -27,7 +27,7 @@ function Home() {
       subtitle:
         "Helping students discover experiential learning, research exposure, exchange programs and career-building pathways.",
       tag: "Opportunities Beyond Classrooms",
-      image: "/bg3.jpg",
+      image: "/bg3.png",
       primary: "Browse Internships",
       primaryLink: "/internships",
     },
