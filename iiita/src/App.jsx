@@ -12,11 +12,13 @@ import Resources from "./pages/Resources";
 import News from "./pages/News";
 import Responsibilities from "./pages/Responsibilities";
 import Programs from "./pages/Programs";
+import ScrollToTop from "./components/layout/ScrollToTop";
 
 function App() {
   return (
 <>
     <HashRouter>
+      <ScrollToTop/>
       <Routes>
         <Route element={<MainLayout />}>
           

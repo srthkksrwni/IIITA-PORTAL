@@ -33,14 +33,14 @@ function Home() {
       tag: "Opportunities Beyond Classrooms",
       image: "/bg3.png",
       primary: "Browse Internships",
-      primaryLink: "/internships",
+      primaryLink: "https://internship.iiita.ac.in/"
     },
   ];
 
   const quickLinks = [
     ["🎓", "Minor & Honours Programs", "/programs", "bg-blue-500/15 text-blue-200"],
     ["🤝", "Find a Mentor", "/mentorship", "bg-emerald-400/15 text-emerald-200"],
-    ["💼", "Browse Internships", "/internships", "bg-amber-400/15 text-amber-200"],
+    ["💼", "Browse Internships", "https://internship.iiita.ac.in/", "bg-amber-400/15 text-amber-200"],
     ["🌍", "Exchange & Mobility", "/mobility", "bg-cyan-400/15 text-cyan-200"],
     ["♿", "Request Assistance", "/inclusive", "bg-violet-400/15 text-violet-200"],
   ];
@@ -96,7 +96,7 @@ function Home() {
 
             <div className="mt-9 flex flex-wrap gap-4">
               <Link
-                to={slide.primaryLink}
+                to={slide.primaryLink} target="_blank"
                 className="rounded-full bg-blue-500 px-7 py-3 font-semibold text-white shadow-lg shadow-blue-500/30 transition duration-300 hover:-translate-y-1 hover:bg-blue-400"
               >
                 {slide.primary} →
@@ -162,7 +162,7 @@ function Home() {
           {quickLinks.map(([icon, title, path, style]) => (
             <Link
               key={title}
-              to={path}
+              to={path} target="_blank"
               className="group rounded-3xl border border-white/10 bg-white/[0.06] p-5 shadow-xl shadow-blue-950/20 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-blue-300/40 hover:bg-white/[0.10]"
             >
               <span

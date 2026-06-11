@@ -95,12 +95,7 @@ export default function Contact() {
                 />
               </div>
 
-              <iframe
-                className="mt-8 h-80 w-full rounded-3xl border border-slate-200 shadow-sm"
-                loading="lazy"
-                title="IIIT Allahabad Map"
-                src="https://www.google.com/maps?q=IIIT+Allahabad+Jhalwa+Prayagraj&output=embed"
-              />
+              
             </div>
 
             <div>
@@ -151,51 +146,15 @@ export default function Contact() {
                   </button>
                 </form>
               </div>
-
-              <div className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
-                <h3 className="text-2xl font-bold text-slate-900 mb-6">
-                  Feedback Form
-                </h3>
-
-                <form onSubmit={handleSubmit} className="space-y-5">
-                  <FormInput
-                    label="Programme / Service"
-                    type="text"
-                    placeholder="e.g. Peer Mentorship"
-                  />
-
-                  <div>
-                    <label className="block text-sm font-semibold text-slate-700 mb-2">
-                      Your Rating
-                    </label>
-                    <select className="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-600">
-                      <option>★★★★★ Excellent</option>
-                      <option>★★★★ Good</option>
-                      <option>★★★ Average</option>
-                      <option>★★ Needs improvement</option>
-                      <option>★ Poor</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-semibold text-slate-700 mb-2">
-                      Comments
-                    </label>
-                    <textarea
-                      rows="3"
-                      className="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-600"
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition"
-                  >
-                    Share Feedback
-                  </button>
-                </form>
-              </div>
             </div>
+          </div>
+          <div className="lg:col-span-2 py-10">
+            <iframe
+              className="h-[450px] w-full rounded-3xl border border-slate-200 shadow-sm"
+              loading="lazy"
+              title="IIIT Allahabad Map"
+              src="https://www.google.com/maps?q=IIIT+Allahabad+Jhalwa+Prayagraj&output=embed"
+            />
           </div>
         </div>
       </section>

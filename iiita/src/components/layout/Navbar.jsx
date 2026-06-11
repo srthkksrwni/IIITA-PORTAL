@@ -2,6 +2,14 @@ import { Link } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
 
 function Navbar() {
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#031225]/90 text-white shadow-lg shadow-blue-950/30 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-3 py-4">
@@ -21,22 +29,22 @@ function Navbar() {
         </Link>
 
         <nav className="hidden items-center gap-7 text-sm font-medium text-blue-100 mx-6 lg:flex">
-          <Link to="/" className="transition hover:text-white">Home</Link>
-          <Link to="/about" className="transition hover:text-white">About</Link>
-          <Link to="/programs" className="transition hover:text-white">Programs</Link>
-          <Link to="/wellness" className="transition hover:text-white">Care & Wellness</Link>
-          <Link to="/resources" className="transition hover:text-white">Resources</Link>
-          <Link to="/news" className="transition hover:text-white">News</Link>
-          <Link to="/dashboard" className="transition hover:text-white">Dashboard</Link>
-          <Link to="/contact" className="transition hover:text-white">Contact</Link>
+          <Link to="/" onClick={scrollTop} className="transition hover:text-white">Home</Link>
+          <Link to="/about" onClick={scrollTop} className="transition hover:text-white">About</Link>
+          <Link to="/programs" onClick={scrollTop} className="transition hover:text-white">Programs</Link>
+          <Link to="/wellness" onClick={scrollTop} className="transition hover:text-white">Care & Wellness</Link>
+          <Link to="/resources" onClick={scrollTop} className="transition hover:text-white">Resources</Link>
+          <Link to="/news" onClick={scrollTop} className="transition hover:text-white">News</Link>
+          <Link to="/dashboard" onClick={scrollTop} className="transition hover:text-white">Dashboard</Link>
+          <Link to="/contact" onClick={scrollTop} className="transition hover:text-white">Contact</Link>
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex ml-8">
           <Link
-            to="/contact"
+            to="https://prayaas.iiita.ac.in/" target="_blank" 
             className="rounded-full border border-blue-300/30 px-5 py-2 text-sm font-semibold text-blue-100 transition hover:bg-white/10 hover:text-white"
           >
-            Student Support
+            Student Initiative
           </Link>
 
           <Link
