@@ -2,18 +2,57 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const coreValues = [
-  ["💙", "Care First", "Every decision begins with the well-being of the student."],
-  ["🌈", "Inclusion", "Equitable access and dignity for every learner, including our Divyangjan students."],
-  ["🔬", "Excellence", "High standards in academics, mentorship and service delivery."],
-  ["🤝", "Integrity", "Confidentiality, fairness and transparency in all that we do."],
-  ["🌍", "Global Outlook", "Opening doors to international exposure and lifelong networks."],
-  ["🌱", "Sustainability", "Building a greener campus and a more responsible generation."],
+  [
+    "💙",
+    "Care First",
+    "Every decision begins with the well-being of the student.",
+  ],
+  [
+    "🌈",
+    "Inclusion",
+    "Equitable access and dignity for every learner, including our Divyangjan students.",
+  ],
+  [
+    "🔬",
+    "Excellence",
+    "High standards in academics, mentorship and service delivery.",
+  ],
+  [
+    "🤝",
+    "Integrity",
+    "Confidentiality, fairness and transparency in all that we do.",
+  ],
+  [
+    "🌍",
+    "Global Outlook",
+    "Opening doors to international exposure and lifelong networks.",
+  ],
+  [
+    "🌱",
+    "Sustainability",
+    "Building a greener campus and a more responsible generation.",
+  ],
 ];
 
 const roles = [
-  ["🏛️", "Dean — Academic Affairs", "Provides academic oversight for Minor and Honours programmes, curriculum design, credit transfer and academic monitoring; partners with the office on enrichment pathways."],
-  ["🎓", "Dean — Students' Affairs", "Co-anchors student welfare, mentorship and wellness initiatives; the Professor-in-Charge reports jointly to this office and the Director."],
-  ["👩‍💼", "Professor-in-Charge", "Leads and coordinates all encompassing activities — enrolment, mentorship, internships, mobility, Divyangjan facilitation, mental well-being and the Welfare & Ecological Council."],
+  {
+    image: "../../public/pavan sir.jpg",
+    name: "Prof. Pavan Chakraborty",
+    designation: "Dean — Academic Affairs",
+    text: "Provides academic oversight for Minor and Honours programmes, curriculum design, credit transfer and academic monitoring; partners with the office on enrichment pathways.",
+  },
+  {
+    image: "../../public/kp sir.jpg",
+    name: "Prof. Krishna Pratap Singh",
+    designation: "Dean — Students' Affairs",
+    text: "Co-anchors student welfare, mentorship and wellness initiatives; the Professor-in-Charge reports jointly to this office and the Director.",
+  },
+  {
+    image: "../../public/Sonali Maam.jpg",
+    name: "Prof. Sonali Agarwal",
+    designation: "Professor-in-Charge",
+    text: "Leads and coordinates all encompassing activities — enrolment, mentorship, internships, mobility, Divyangjan facilitation, mental well-being and the Welfare & Ecological Council.",
+  },
 ];
 
 export default function About() {
@@ -120,22 +159,49 @@ export default function About() {
                 Objectives
               </h4>
               <ul className="space-y-3 text-slate-600 leading-relaxed list-disc pl-6 mb-8">
-                <li>Provide a single, integrated point of access for all student-development services.</li>
-                <li>Strengthen academic enrichment through Minor and Honours pathways.</li>
-                <li>Institutionalise peer, faculty, research, career and industry mentorship.</li>
-                <li>Expand internships and global mobility for every eligible student.</li>
-                <li>Deliver proactive, confidential mental-wellness support.</li>
-                <li>Ensure full accessibility and inclusion for Divyangjan students.</li>
+                <li>
+                  Provide a single, integrated point of access for all
+                  student-development services.
+                </li>
+                <li>
+                  Strengthen academic enrichment through Minor and Honours
+                  pathways.
+                </li>
+                <li>
+                  Institutionalise peer, faculty, research, career and industry
+                  mentorship.
+                </li>
+                <li>
+                  Expand internships and global mobility for every eligible
+                  student.
+                </li>
+                <li>
+                  Deliver proactive, confidential mental-wellness support.
+                </li>
+                <li>
+                  Ensure full accessibility and inclusion for Divyangjan
+                  students.
+                </li>
               </ul>
 
               <h4 className="text-xl font-bold text-slate-900 mb-3">
                 Strategic Goals 2026–2028
               </h4>
               <ul className="space-y-3 text-slate-600 leading-relaxed list-disc pl-6">
-                <li>100% mentor coverage for all enrolled students within two years.</li>
-                <li>Double international exchange and internship placements.</li>
-                <li>Achieve a measurable rise in student well-being and satisfaction indices.</li>
-                <li>Certify the campus against recognised accessibility standards.</li>
+                <li>
+                  100% mentor coverage for all enrolled students within two
+                  years.
+                </li>
+                <li>
+                  Double international exchange and internship placements.
+                </li>
+                <li>
+                  Achieve a measurable rise in student well-being and
+                  satisfaction indices.
+                </li>
+                <li>
+                  Certify the campus against recognised accessibility standards.
+                </li>
               </ul>
             </div>
 
@@ -190,19 +256,37 @@ export default function About() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {roles.map(([icon, title, text]) => (
+          <div className="grid gap-8 md:grid-cols-3">
+            {roles.map((person) => (
               <div
-                key={title}
-                className="rounded-3xl bg-white border border-slate-200 p-7 shadow-sm hover:shadow-md transition"
+                key={person.name}
+                className="overflow-hidden rounded-3xl border border-white/10 bg-white shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
               >
-                <div className="w-12 h-12 rounded-2xl bg-blue-100 flex items-center justify-center text-2xl mb-4">
-                  {icon}
+               <div className="relative h-[380px] overflow-hidden">
+  <img
+    src={person.image}
+    alt={person.name}
+    className="h-full w-full object-cover object-top"
+  />
+
+  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+
+  <div className="absolute bottom-0 left-0 p-6">
+    <h3 className="text-2xl font-bold text-white">
+      {person.name}
+    </h3>
+
+    <p className="text-blue-200">
+      {person.designation}
+    </p>
+  </div>
+</div>
+
+                <div className="p-6">
+                  <p className="leading-relaxed text-slate-600">
+                    {person.text}
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  {title}
-                </h3>
-                <p className="text-slate-600 leading-relaxed">{text}</p>
               </div>
             ))}
           </div>
