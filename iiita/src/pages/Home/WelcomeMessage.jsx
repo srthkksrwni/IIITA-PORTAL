@@ -1,14 +1,17 @@
+
 function WelcomeMessage() {
   return (
     <section className="bg-[#031225] px-6 py-20 text-white lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-10 rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 shadow-2xl shadow-blue-950/30 backdrop-blur-xl lg:grid-cols-[0.85fr_1.15fr] lg:p-10">
-          {/* Portrait Card */}
+
+          {/* Left Panel */}
           <div className="relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-gradient-to-br from-blue-500/20 via-blue-900/30 to-slate-950 p-8 shadow-xl">
             <div className="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-blue-500/20 blur-3xl" />
             <div className="absolute -bottom-16 -left-16 h-48 w-48 rounded-full bg-cyan-400/10 blur-3xl" />
 
-            <div className="relative flex min-h-[420px] flex-col items-center justify-center text-center">
+            <div className="relative flex flex-col items-center text-center">
+              {/* Profile Image */}
               <div className="h-48 w-48 overflow-hidden rounded-full border-4 border-blue-400/30 shadow-2xl shadow-blue-500/20">
                 <img
                   src="/Sonali Maam.jpg"
@@ -17,14 +20,44 @@ function WelcomeMessage() {
                 />
               </div>
 
-              <div className="mt-8 rounded-2xl border border-white/10 bg-white/10 px-6 py-4 backdrop-blur-md">
+              {/* Name Card */}
+              <div className="mt-8 w-full rounded-2xl border border-white/10 bg-white/10 px-6 py-4 backdrop-blur-md">
                 <h3 className="text-xl font-bold text-white">
                   Prof. Sonali Agarwal
                 </h3>
-                <p className="mt-1 text-sm text-blue-200">
-                  Professor-in-Charge
+              </div>
+
+              {/* Additional Info Card */}
+              <div className="mt-6 w-full rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md">
+                <h4 className="text-lg font-semibold text-white">
+                  Head, Centre for Intelligent Robotics (CIR)
+                </h4>
+
+                <p className="mt-3 text-sm leading-7 text-slate-300">
+                  Professor-In-Charge, Students’ Holistic Growth, Inclusive
+                  Care and Mental Wellness
+                  <br />
+                  Action Editor, Neural Networks
+                  <br />
+                  General Chair: ISEC 2023 | ICONIP 2022 | BDA 2021
+                  <br />
+                  Professor
+                  <br />
+                  Big Data Analytics (BDA) Lab
+                  <br />
+                  Department of Information Technology
                 </p>
               </div>
+
+              {/* Profile Button */}
+              <a
+                href="https://profile.iiita.ac.in/sonali/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 w-full rounded-2xl bg-blue-600 px-6 py-4 text-center font-semibold text-white transition-all duration-300 hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-500/30"
+              >
+                View Full Profile 
+              </a>
             </div>
           </div>
 
@@ -42,10 +75,7 @@ function WelcomeMessage() {
               <p>
                 Dear Students, Colleagues and Well-wishers — it is my privilege
                 to welcome you to the Office for Students&apos; Holistic Growth,
-                Inclusive Care and Mental Wellness at IIIT Allahabad. This
-                office was created with a single, unifying belief: that academic
-                excellence and personal well-being are not competing goals, but
-                partners in a student&apos;s success.
+                Inclusive Care and Mental Wellness at IIIT Allahabad.
               </p>
 
               <p>
@@ -71,17 +101,8 @@ function WelcomeMessage() {
                 culture of care, curiosity and courage.
               </p>
             </div>
-
-            <div className="mt-8 border-l-4 border-blue-400 pl-5">
-              <h4 className="text-lg font-bold text-white">
-                Prof. Sonali Agarwal
-              </h4>
-              <p className="mt-1 text-sm leading-6 text-blue-200">
-                Professor-in-Charge · Students&apos; Holistic Growth, Inclusive
-                Care & Mental Wellness · IIIT Allahabad
-              </p>
-            </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -89,3 +110,4 @@ function WelcomeMessage() {
 }
 
 export default WelcomeMessage;
+
