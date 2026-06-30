@@ -15,19 +15,19 @@ function Navbar() {
       <div className="mx-auto flex max-w-[1550px] items-center px-6 py-4">
         {/* Logo Section */}
         <Link to="/" onClick={scrollTop} className="flex items-center gap-3">
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-blue-800 text-lg font-extrabold shadow-lg shadow-blue-500/30">
-            T
-          </span>
+          {/* <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-blue-800 text-lg font-extrabold shadow-lg shadow-blue-500/30">
+            IIITA
+          </span> */}
 
           <div className="leading-tight">
             <div className="text-lg font-bold tracking-wide">
-              THRIVE @ IIITA
+              IIIT Allahabad
             </div>
-
+{/* 
             <div className="text-xs leading-5 text-blue-200">
-              <div>Holistic Growth · Inclusive Care ·</div>
+              <div>Holistic Growth · Inclusive Care</div>
               <div>Mental Wellness</div>
-            </div>
+            </div> */}
           </div>
         </Link>
 
@@ -42,8 +42,12 @@ function Navbar() {
               About
             </Link>
 
-            <Link to="/programs" onClick={scrollTop} className="transition hover:text-white">
-              Programs
+            <Link to="/minors" onClick={scrollTop} className="transition hover:text-white">
+              Minors
+            </Link>
+
+             <Link to="/honours" onClick={scrollTop} className="transition hover:text-white">
+              Honours
             </Link>
 
             <Link to="/wellness" onClick={scrollTop} className="transition hover:text-white">
@@ -54,13 +58,13 @@ function Navbar() {
               Resources
             </Link>
 
-            <Link to="/news" onClick={scrollTop} className="transition hover:text-white">
-              News
+            <Link to="/internships" onClick={scrollTop} className="transition hover:text-white">
+              Internships
             </Link>
 
-            <Link to="/dashboard" onClick={scrollTop} className="transition hover:text-white">
+            {/* <Link to="/dashboard" onClick={scrollTop} className="transition hover:text-white">
               Dashboard
-            </Link>
+            </Link> */}
 
             <Link to="/contact" onClick={scrollTop} className="transition hover:text-white">
               Contact

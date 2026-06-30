@@ -39,19 +39,19 @@ const roles = [
     image: "../../public/pavan sir.jpg",
     name: "Prof. Pavan Chakraborty",
     designation: "Dean — Academic Affairs",
-    text: "Provides academic oversight for Minor and Honours programmes, curriculum design, credit transfer and academic monitoring; partners with the office on enrichment pathways.",
+    text: "Provides academic oversight for curriculum planning, credit transfer, and academic monitoring, while supporting student enrichment and holistic academic growth in collaboration with the office.",
   },
   {
     image: "../../public/kp sir.jpg",
     name: "Prof. Krishna Pratap Singh",
     designation: "Dean — Students' Affairs",
-    text: "Co-anchors student welfare, mentorship and wellness initiatives; the Professor-in-Charge reports jointly to this office and the Director.",
+    text: "Co-anchors student engagement, mentorship, and developmental initiatives across the institute, working to foster a vibrant and supportive student ecosystem.",
   },
   {
     image: "../../public/Sonali Maam.jpg",
     name: "Prof. Sonali Agarwal",
-    designation: "Professor-in-Charge",
-    text: "Leads and coordinates all encompassing activities — enrolment, mentorship, internships, mobility, Divyangjan facilitation, mental well-being and the Welfare & Ecological Council.",
+    designation: "Professor-in-Charge (SHG-ICMW)",
+    text: "Leads and coordinates key student initiatives, including enrolment, mentorship, Minor and Honours programmes, internships, mobility, inclusive support, mental wellness, and Welfare & Ecological Council activities.",
   },
 ];
 
@@ -71,10 +71,12 @@ export default function About() {
             About the Office
           </h1>
 
-          <p className="max-w-3xl text-lg text-blue-100 leading-relaxed">
-            Bringing together academic enrichment, mentorship, mobility,
-            inclusion and wellness under one coordinated, caring roof —
-            established by Office Order in January 2026.
+          <p className="max-w-3xl text-lg text-blue-100 leading-relaxed md:text-justify">
+            The Office of Students' Holistic Growth, Inclusive Care and Mental
+            Wellness (SHG-ICMW) serves as a dedicated platform for fostering academic
+            enrichment, mentorship, student mobility, inclusion, and well-being,
+            bringing diverse support systems together under one coordinated and
+            caring framework.
           </p>
         </div>
       </section>
@@ -89,11 +91,11 @@ export default function About() {
               <h3 className="text-2xl font-bold text-slate-900 mb-3">
                 Our Mission
               </h3>
-              <p className="text-slate-600 leading-relaxed">
-                To nurture every IIITA student as a whole person — advancing
-                academic excellence, emotional well-being, inclusion and global
-                readiness through coordinated, compassionate and student-centred
-                support.
+              <p className="text-slate-600 leading-relaxed md:text-justify">
+                To nurture the holistic development of every IIITA student by
+                providing integrated support in academics, mentorship, wellness,
+                inclusion, and mobility, enabling them to thrive personally,
+                socially, and professionally.
               </p>
             </div>
 
@@ -104,10 +106,12 @@ export default function About() {
               <h3 className="text-2xl font-bold text-slate-900 mb-3">
                 Our Vision
               </h3>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-slate-600 leading-relaxed md:text-justify">
                 To make IIIT Allahabad a national model for holistic student
-                development, where no student is left behind and every student
-                is empowered to thrive academically, personally and socially.
+                development, where every student is supported through academic
+                enrichment, mentorship, inclusive care, student mobility, and
+                mental wellness, and empowered to thrive academically,
+                personally, and socially.
               </p>
             </div>
           </div>
@@ -127,13 +131,7 @@ export default function About() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {coreValues.map(([icon, title, text]) => (
-              <div
-                key={title}
-                className="rounded-3xl bg-white border border-slate-200 p-7 shadow-sm hover:shadow-md transition"
-              >
-                <div className="w-12 h-12 rounded-2xl bg-blue-100 flex items-center justify-center text-2xl mb-4">
-                  {icon}
-                </div>
+              <div className="rounded-3xl bg-white border border-slate-200 p-7 shadow-sm hover:shadow-md transition">
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
                   {title}
                 </h3>
@@ -184,25 +182,7 @@ export default function About() {
                 </li>
               </ul>
 
-              <h4 className="text-xl font-bold text-slate-900 mb-3">
-                Strategic Goals 2026–2028
-              </h4>
-              <ul className="space-y-3 text-slate-600 leading-relaxed list-disc pl-6">
-                <li>
-                  100% mentor coverage for all enrolled students within two
-                  years.
-                </li>
-                <li>
-                  Double international exchange and internship placements.
-                </li>
-                <li>
-                  Achieve a measurable rise in student well-being and
-                  satisfaction indices.
-                </li>
-                <li>
-                  Certify the campus against recognised accessibility standards.
-                </li>
-              </ul>
+              
             </div>
 
             <div>
@@ -217,8 +197,8 @@ export default function About() {
                 The Office operates under the authority of the Director, IIIT
                 Allahabad, and works in close coordination with the Dean
                 Academic Affairs and Dean Students' Affairs. It is led by the
-                Professor-in-Charge, supported by program coordinators,
-                counsellors, an accessibility officer and student volunteers.
+                Professor-in-Charge, (SHG-ICMW) supported by program coordinators,
+                counsellors and student volunteers.
               </p>
 
               <h4 className="text-xl font-bold text-slate-900 mb-3">
@@ -231,15 +211,7 @@ export default function About() {
                 monitors outcomes and approves new initiatives each semester.
               </p>
 
-              <h4 className="text-xl font-bold text-slate-900 mb-3">
-                Reporting Structure
-              </h4>
-              <p className="text-slate-600 leading-relaxed">
-                The Professor-in-Charge reports to the Director, IIITA, along
-                with the Dean Students' Affairs, and coordinates
-                programmatically with the Dean Academic Affairs, as mandated by
-                Office Order F.No. IIIT-A/RO/029/2026.
-              </p>
+              
             </div>
           </div>
         </div>
@@ -262,25 +234,23 @@ export default function About() {
                 key={person.name}
                 className="overflow-hidden rounded-3xl border border-white/10 bg-white shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
               >
-               <div className="relative h-[380px] overflow-hidden">
-  <img
-    src={person.image}
-    alt={person.name}
-    className="h-full w-full object-cover object-top"
-  />
+                <div className="relative h-[380px] overflow-hidden">
+                  <img
+                    src={person.image}
+                    alt={person.name}
+                    className="h-full w-full object-cover object-top"
+                  />
 
-  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
 
-  <div className="absolute bottom-0 left-0 p-6">
-    <h3 className="text-2xl font-bold text-white">
-      {person.name}
-    </h3>
+                  <div className="absolute bottom-0 left-0 p-6">
+                    <h3 className="text-2xl font-bold text-white">
+                      {person.name}
+                    </h3>
 
-    <p className="text-blue-200">
-      {person.designation}
-    </p>
-  </div>
-</div>
+                    <p className="text-blue-200">{person.designation}</p>
+                  </div>
+                </div>
 
                 <div className="p-6">
                   <p className="leading-relaxed text-slate-600">

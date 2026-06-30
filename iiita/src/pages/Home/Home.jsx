@@ -8,49 +8,50 @@ import CallToAction from "./CallToAction";
 
 function Home() {
   const slides = [
-    {
-      title: "Empowering Students for Academic Excellence",
-      subtitle:
-        "A unified student support platform for mentoring, wellness, internships, mobility and inclusive growth.",
-      tag: "Office of the Professor-in-Charge · Est. 2026",
-      image: "/bg1.png",
-      primary: "Explore Programs",
-      primaryLink: "/programs",
-    },
-    {
-      title: "Mentorship, Wellness & Inclusive Support",
-      subtitle:
-        "Connecting students with care systems, academic guidance, accessibility support and personal development resources.",
-      tag: "Student-Centric Growth Ecosystem",
-      image: "/bg2.png",
-      primary: "Student Support",
-      primaryLink: "/contact",
-    },
-    {
-      title: "Internships, Mobility & Global Opportunities",
-      subtitle:
-        "Helping students discover experiential learning, research exposure, exchange programs and career-building pathways.",
-      tag: "Opportunities Beyond Classrooms",
-      image: "/bg3.png",
-      primary: "Browse Internships",
-      primaryLink: "https://internship.iiita.ac.in/"
-    },
-  ];
+  {
+    title: "Empowering Students for Academic Excellence",
+    subtitle:
+      "Supporting students through academic guidance, skill development, leadership opportunities, and holistic growth initiatives that foster excellence throughout their educational journey.",
+    tag: "Welcome to the Office of Students' Holistic Growth, Inclusive Care and Mental Wellness",
+    image: "/bg1.png",
+    // primary: "Explore Programs",
+    // primaryLink: "/programs",
+  },
+  {
+    title: "Mentorship, Wellness & Inclusive Support",
+    subtitle:
+      "Providing mentorship, mental wellness resources, accessibility assistance, and inclusive support systems to ensure every student thrives in a safe and caring environment.",
+    tag: "Welcome to the Office of Students' Holistic Growth, Inclusive Care and Mental Wellness",
+    image: "/bg2.png",
+    // primary: "Student Support",
+    // primaryLink: "/contact",
+  },
+  {
+    title: "Internships, Mobility & Global Opportunities",
+    subtitle:
+      "Enabling students to explore internships, research experiences, exchange programs, industry collaborations, and global opportunities that enhance career readiness and professional growth.",
+    tag: "Welcome to the Office of Students' Holistic Growth, Inclusive Care and Mental Wellness",
+    image: "/bg3.png",
+    // primary: "Browse Internships",
+    // primaryLink: "https://internship.iiita.ac.in/",
+  },
+];
 
-  const quickLinks = [
-    ["🎓", "Minor & Honours Programs", "/programs", "bg-blue-500/15 text-blue-200"],
-    ["🤝", "Find a Mentor", "/mentorship", "bg-emerald-400/15 text-emerald-200"],
-    ["💼", "Browse Internships", "https://internship.iiita.ac.in/", "bg-amber-400/15 text-amber-200"],
-    ["🌍", "Exchange & Mobility", "/mobility", "bg-cyan-400/15 text-cyan-200"],
-    ["♿", "Request Assistance", "/inclusive", "bg-violet-400/15 text-violet-200"],
-  ];
+
+  // const quickLinks = [
+  //   ["🎓", "Minor & Honours Programs", "/programs", "bg-blue-500/15 text-blue-200"],
+  //   ["🤝", "Find a Mentor", "/mentorship", "bg-emerald-400/15 text-emerald-200"],
+  //   ["💼", "Browse Internships", "https://internship.iiita.ac.in/", "bg-amber-400/15 text-amber-200"],
+  //   ["🌍", "Exchange & Mobility", "/mobility", "bg-cyan-400/15 text-cyan-200"],
+  //   ["♿", "Request Assistance", "/inclusive", "bg-violet-400/15 text-violet-200"],
+  // ];
 
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 4500);
+    }, 100000);
 
     return () => clearInterval(timer);
   }, [slides.length]);
@@ -95,19 +96,14 @@ function Home() {
             </p>
 
             <div className="mt-9 flex flex-wrap gap-4">
-              <Link
-                to={slide.primaryLink} target="_blank"
-                className="rounded-full bg-blue-500 px-7 py-3 font-semibold text-white shadow-lg shadow-blue-500/30 transition duration-300 hover:-translate-y-1 hover:bg-blue-400"
-              >
-                {slide.primary} →
-              </Link>
+              
 
-              <Link
+              {/* <Link
                 to="/wellness"
                 className="rounded-full border border-white/20 bg-white/10 px-7 py-3 font-semibold text-white backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:bg-white/20"
               >
                 Wellness Resources
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
@@ -158,7 +154,7 @@ function Home() {
           </p>
         </div>
 
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+        {/* <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
           {quickLinks.map(([icon, title, path, style]) => (
             <Link
               key={title}
@@ -180,7 +176,7 @@ function Home() {
               </p>
             </Link>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
 
