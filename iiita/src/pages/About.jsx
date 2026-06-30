@@ -36,19 +36,19 @@ const coreValues = [
 
 const roles = [
   {
-    image: "../../public/pavan sir.jpg",
+    image: "/pavan sir.jpg",
     name: "Prof. Pavan Chakraborty",
     designation: "Dean — Academic Affairs",
     text: "Provides academic oversight for curriculum planning, credit transfer, and academic monitoring, while supporting student enrichment and holistic academic growth in collaboration with the office.",
   },
   {
-    image: "../../public/kp sir.jpg",
+    image: "/kp sir.jpg",
     name: "Prof. Krishna Pratap Singh",
     designation: "Dean — Students' Affairs",
     text: "Co-anchors student engagement, mentorship, and developmental initiatives across the institute, working to foster a vibrant and supportive student ecosystem.",
   },
   {
-    image: "../../public/Sonali Maam.jpg",
+    image: "/Sonali Maam.jpg",
     name: "Prof. Sonali Agarwal",
     designation: "Professor-in-Charge (SHG-ICMW)",
     text: "Leads and coordinates key student initiatives, including enrolment, mentorship, Minor and Honours programmes, internships, mobility, inclusive support, mental wellness, and Welfare & Ecological Council activities.",
