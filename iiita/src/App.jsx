@@ -15,6 +15,7 @@ import Minors from "./pages/Minors";
 import ScrollToTop from "./components/layout/ScrollToTop";
 import Internships from "./pages/Internships";
 import Honours from "./pages/Honours";
+import UnderConstruction from "./pages/UnderConstruction";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path="/minors" element={<Minors />} />
           <Route path="/internships" element={<Internships />} />
           <Route path="/honours" element={<Honours />} />
+          <Route path="/underconstruction" element={<UnderConstruction/>} />
           
 
           {/* other routes */}

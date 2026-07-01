@@ -1,130 +1,144 @@
 import { Link } from "react-router-dom";
 
 function Footer() {
-return ( <footer className="bg-slate-950 text-slate-300"> <div className="max-w-7xl mx-auto px-6 py-16">
-    {/* Main Footer */}
-    <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-      
-      {/* Brand */}
-      <div>
-        <div className="flex items-center gap-3 mb-4">
-          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-700 text-white font-bold text-lg">
-            T
-          </div>
+  return (
+    <footer className="bg-slate-950 text-slate-300">
+      <div className="mx-auto max-w-7xl px-6 py-16">
 
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+
+          {/* About */}
           <div>
-            <h3 className="font-bold text-white">
-              THRIVE @ IIITA
+            <h3 className="mb-4 text-xl font-bold text-white">
+              IIIT Allahabad
             </h3>
 
-            <p className="text-sm text-slate-400">
-              Holistic Growth · Inclusive Care · Mental Wellness
+            <p className="text-sm leading-7 text-slate-400">
+              Office for Students' Holistic Growth, Inclusive Care &
+              Mental Wellness dedicated to supporting student
+              development, academic enrichment, well-being,
+              mentorship, and global opportunities.
             </p>
           </div>
+
+          {/* Academic Programs */}
+          <div>
+            <h4 className="mb-4 text-lg font-semibold text-white">
+              Academic Programs
+            </h4>
+
+            <div className="flex flex-col gap-3">
+              <Link
+                to="/minors"
+                className="transition-colors hover:text-white"
+              >
+                Minor Programs
+              </Link>
+
+              <Link
+                to="/honours"
+                className="transition-colors hover:text-white"
+              >
+                Honours by Research
+              </Link>
+
+              {/* <Link
+                to="/mobility"
+                className="transition-colors hover:text-white"
+              >
+                Student Mobility
+              </Link> */}
+
+              <Link
+                to="/internships"
+                className="transition-colors hover:text-white"
+              >
+                Internships
+              </Link>
+            </div>
+          </div>
+
+          {/* Student Support */}
+          <div>
+            <h4 className="mb-4 text-lg font-semibold text-white">
+              Student Support
+            </h4>
+
+            <div className="flex flex-col gap-3">
+              <Link
+                to="/wellness"
+                className="transition-colors hover:text-white"
+              >
+                Care & Wellness
+              </Link>
+
+              {/* <Link
+                to="/mentorship"
+                className="transition-colors hover:text-white"
+              >
+                Mentorship
+              </Link>
+
+              <Link
+                to="/inclusive"
+                className="transition-colors hover:text-white"
+              >
+                Inclusive Education
+              </Link> */}
+
+              <Link
+                to="/ecological"
+                className="transition-colors hover:text-white"
+              >
+                Ecological Council
+              </Link>
+            </div>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="mb-4 text-lg font-semibold text-white">
+              Contact
+            </h4>
+
+            <div className="space-y-3 text-sm text-slate-400">
+              <p>
+                Office for Students' Holistic Growth, Inclusive Care &
+                Mental Wellness
+              </p>
+
+              <p>
+                Indian Institute of Information Technology Allahabad
+              </p>
+
+              <p>
+                Devghat, Jhalwa,<br />
+                Prayagraj – 211015,<br />
+                Uttar Pradesh, India
+              </p>
+            </div>
+          </div>
+
         </div>
 
-        <p className="text-sm leading-7 text-slate-400">
-          The single point of access for student development,
-          well-being, inclusion, and global opportunity at
-          IIIT Allahabad.
-        </p>
-      </div>
+        {/* Divider */}
+        <div className="my-10 h-px bg-slate-800" />
 
-      {/* Programs */}
-      <div>
-        <h4 className="mb-4 text-lg font-semibold text-white">
-          Programs
-        </h4>
+        {/* Bottom */}
+        <div className="flex flex-col gap-4 text-sm text-slate-500 lg:flex-row lg:items-center lg:justify-between">
+          <p>
+            © 2026 IIIT Allahabad. All Rights Reserved.
+          </p>
 
-        <div className="flex flex-col gap-3">
-          <Link to="/programs" className="hover:text-white transition-colors">
-            Minor & Honours
-          </Link>
-
-          <Link to="/mentorship" className="hover:text-white transition-colors">
-            Mentorship
-          </Link>
-
-          <Link to="/mobility" className="hover:text-white transition-colors">
-            Student Mobility
-          </Link>
-
-          <Link to="/internships" className="hover:text-white transition-colors">
-            Internships
-          </Link>
-        </div>
-      </div>
-
-      {/* Care & Wellness */}
-      <div>
-        <h4 className="mb-4 text-lg font-semibold text-white">
-          Care & Wellness
-        </h4>
-
-        <div className="flex flex-col gap-3">
-          <Link to="/wellness" className="hover:text-white transition-colors">
+          <p>
+            Office for Students' Holistic Growth, Inclusive Care &
             Mental Wellness
-          </Link>
-
-          <Link to="/inclusive" className="hover:text-white transition-colors">
-            Inclusive Care
-          </Link>
-
-          <Link to="/ecological" className="hover:text-white transition-colors">
-            Ecological Council
-          </Link>
-
-          <Link to="/resources" className="hover:text-white transition-colors">
-            Student Resources
-          </Link>
+          </p>
         </div>
+
       </div>
-
-      {/* Office */}
-      <div>
-        <h4 className="mb-4 text-lg font-semibold text-white">
-          Office
-        </h4>
-
-        <div className="flex flex-col gap-3">
-          <Link to="/about" className="hover:text-white transition-colors">
-            About Us
-          </Link>
-
-          <Link to="/news" className="hover:text-white transition-colors">
-            News & Events
-          </Link>
-
-          <Link to="/dashboard" className="hover:text-white transition-colors">
-            Dashboard
-          </Link>
-
-          <Link to="/contact" className="hover:text-white transition-colors">
-            Contact
-          </Link>
-        </div>
-      </div>
-
-    </div>
-
-    {/* Divider */}
-    <div className="my-10 h-px bg-slate-800" />
-
-    {/* Bottom Footer */}
-    <div className="flex flex-col gap-4 text-sm text-slate-500 lg:flex-row lg:items-center lg:justify-between">
-      <p>
-        © 2026 IIIT Allahabad · Office for Students' Holistic Growth,
-        Inclusive Care & Mental Wellness.
-      </p>
-
-      <p>
-        Deoghat, Jhalwa, Prayagraj-211015, Uttar Pradesh, India
-      </p>
-    </div>
-  </div>
-</footer>
-
-);
+    </footer>
+  );
 }
 
 export default Footer;

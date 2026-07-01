@@ -1,97 +1,29 @@
 import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 
+import { scienceOfHappiness } from "../data/scienceOfHappinessData";
+import { mathematicalAnalysis } from "../data/mathematicalAnalysis";
+import { biologicalDataAnalytics } from "../data/biologicalDataAnalytics";
+import { medicalDiagnosticsTherapeuticTechnology } from "../data/medicalDiagnosticsTherapeuticTechnology";
+import { frontiersInPhysics } from "../data/frontiersInPhysics";
+import { entrepreneurshipInnovation } from "../data/entrepreneurshipInnovation";
+import { economicsFinanceForEngineers } from "../data/economicsFinanceForEngineers";
+
+const programs = [
+  scienceOfHappiness,
+  mathematicalAnalysis,
+  biologicalDataAnalytics,
+  medicalDiagnosticsTherapeuticTechnology,
+  frontiersInPhysics,
+  entrepreneurshipInnovation,
+  economicsFinanceForEngineers,
+];
+
 const sideLinks = [
   ["overview", "Overview"],
   ["eligibility", "Eligibility"],
-  ["science-happiness", "Science of Happiness"],
-  ["mathematical-analysis", "Mathematical Analysis"],
-  ["biological-data", "Biological Data Analytics"],
-  ["physics", "Frontiers in Physics"],
-  ["entrepreneurship", "Entrepreneurship & Innovation"],
-  ["economics-finance", "Economics & Finance"],
+  ...programs.map((program) => [program.id, program.title]),
   ["faq", "FAQ"],
-];
-
-const programs = [
-  {
-    id: "science-happiness",
-    title: "Science of Happiness (MDM)",
-    description:
-      "This MDM promotes research, training, education, and practices of well-being through the science and philosophy of happiness. It focuses on nurturing positive emotions, holistic well-being, community growth, family well-being, and individual thriving.",
-    courses: [
-      "Introduction to Science of Happiness (CS2501)",
-      "Understanding Domains of Happiness (CS2502)",
-      "Happiness Indices (CS2503)",
-      "Assessment of Happiness (CS2504)",
-      "Independent Study on Science of Happiness (CS2505)",
-    ],
-  },
-  {
-    id: "mathematical-analysis",
-    title: "Mathematical Analysis (MDM)",
-    description:
-      "This programme develops strong foundations in real analysis, topology, differential geometry, measure theory, and functional analysis with focus on rigorous mathematical reasoning and advanced analytical methods.",
-    courses: [
-      "Real Analysis (AS2511)",
-      "Introduction to Topology (AS2512)",
-      "Differential Geometry of Curves and Surfaces (AS2513)",
-      "Measure Theory (AS2514)",
-      "Functional Analysis (AS2515)",
-    ],
-  },
-  {
-    id: "biological-data",
-    title: "Biological Data Analytics (MDM)",
-    description:
-      "This programme introduces students to genomics, proteomics, sequencing, cheminformatics, systems biology, and molecular structure prediction using computational and analytical approaches.",
-    courses: [
-      "Proteomics and Genomics (AS2501)",
-      "Next Generation Sequencing (AS2502)",
-      "Cheminformatics for Engineers (AS2503)",
-      "Systems Biology and Modeling (AS2504)",
-      "Molecular Structure Prediction (AS2505)",
-    ],
-  },
-  {
-    id: "physics",
-    title: "Frontiers in Physics (MDM)",
-    description:
-      "This programme exposes students to advanced topics in light-matter interaction, space-time physics, magnetic materials, quantum materials, and green energy technologies.",
-    courses: [
-      "Light Matter Interaction (AS2516)",
-      "Physics of Space and Time (AS2517)",
-      "Magnetic Materials and Applications (AS2518)",
-      "Quantum Materials & Devices (AS2519)",
-      "Green Energy Physics (AS2520)",
-    ],
-  },
-  {
-    id: "entrepreneurship",
-    title: "Entrepreneurship & Innovation (MDM)",
-    description:
-      "This programme builds entrepreneurial thinking, innovation capability, business planning, finance understanding, and corporate entrepreneurship skills for students interested in start-ups and innovation-driven careers.",
-    courses: [
-      "Fundamentals of Entrepreneurship (MS2501)",
-      "Social Entrepreneurship (MS2502)",
-      "Entrepreneurial Finance (MS2503)",
-      "Innovation Management (MS2504)",
-      "Managing Corporate Entrepreneurship (MS2505)",
-    ],
-  },
-  {
-    id: "economics-finance",
-    title: "Economics & Finance for Engineers (MDM)",
-    description:
-      "This programme helps engineering students understand economic systems, money and banking, business environments, start-up economics, and digital economy models.",
-    courses: [
-      "Indian Economics (MS2506)",
-      "Money and Banking (MS2507)",
-      "Economics of Business Environment (MS2508)",
-      "Start-Up Economics (MS2509)",
-      "Digital Economics (MS2510)",
-    ],
-  },
 ];
 
 export default function Minors() {
@@ -100,13 +32,9 @@ export default function Minors() {
       <section className="bg-gradient-to-br from-blue-950 via-blue-900 to-slate-950 py-20 text-white">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-4 text-sm text-blue-200">
-            <HashLink to="/" className="hover:text-white">
-              Home
-            </HashLink>{" "}
+            <HashLink to="/" className="hover:text-white">Home</HashLink>{" "}
             /{" "}
-            <HashLink to="/programs" className="hover:text-white">
-              Programs
-            </HashLink>{" "}
+            <HashLink to="/programs" className="hover:text-white">Programs</HashLink>{" "}
             / Minor Programs
           </div>
 
@@ -143,30 +71,24 @@ export default function Minors() {
             <ContentBlock id="overview" title="Program Overview">
               <p>
                 Minor Programs provide students with interdisciplinary academic
-                enrichment pathways across wellness, mathematics, biological
-                data analytics, physics, entrepreneurship, innovation, economics,
-                and finance. These programmes help students broaden their
-                knowledge, strengthen analytical thinking, and gain exposure to
-                emerging academic and professional domains.
+                enrichment pathways across wellness, mathematics, biological data
+                analytics, medical diagnostics, physics, entrepreneurship,
+                innovation, economics, and finance.
               </p>
             </ContentBlock>
 
-             <ContentBlock id="eligibility" title="Eligibility">
+            <ContentBlock id="eligibility" title="Eligibility">
               <ul className="list-disc space-y-2 pl-6">
-                <li>Open to students who have completed the first year of their programme.</li>
-                <li>Minimum CGPA threshold, typically 7.0, as notified each cycle.</li>
+                <li>Open to students as per institute-notified academic rules.</li>
+                <li>Minimum CGPA requirement as notified for the respective cycle.</li>
                 <li>No active academic backlog at the time of application.</li>
-                <li>Honours requires faculty endorsement and a statement of interest.</li>
+                <li>Students should refer to official circulars for final eligibility.</li>
               </ul>
             </ContentBlock>
 
             {programs.map((program) => (
-              <ContentBlock
-                key={program.id}
-                id={program.id}
-                title={program.title}
-              >
-                <p>{program.description}</p>
+              <ContentBlock key={program.id} id={program.id} title={program.title}>
+                <p>{program.objective}</p>
                 <CourseList courses={program.courses} />
               </ContentBlock>
             ))}
@@ -182,7 +104,7 @@ export default function Minors() {
               />
               <FAQ
                 question="Where can students get more details?"
-                answer="Students should refer to official institute circulars and programme handbooks for detailed eligibility, course structure, and application timelines."
+                answer="Students should refer to official institute circulars and programme handbooks."
               />
             </ContentBlock>
           </div>
@@ -203,13 +125,56 @@ function ContentBlock({ id, title, children }) {
 
 function CourseList({ courses }) {
   return (
-    <div className="mt-5 grid gap-4 md:grid-cols-2">
+    <div className="mt-6 space-y-5">
       {courses.map((course) => (
         <div
-          key={course}
-          className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md"
+          key={course.code}
+          className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md"
         >
-          <h4 className="font-bold text-slate-900">{course}</h4>
+          <div className="mb-2 inline-flex rounded-full bg-blue-50 px-3 py-1 text-xs font-bold text-blue-700">
+            {course.code}
+          </div>
+
+          <h4 className="mb-3 text-xl font-bold text-slate-900">
+            {course.title}
+          </h4>
+
+          {course.objective && (
+            <p className="mb-4 text-slate-600">{course.objective}</p>
+          )}
+
+          {course.contents?.length > 0 && (
+            <>
+              <h5 className="mb-2 font-bold text-slate-900">Course Contents</h5>
+              <ul className="mb-4 list-disc space-y-2 pl-6 text-slate-600">
+                {course.contents.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </>
+          )}
+
+          {course.learningOutcomes?.length > 0 && (
+            <>
+              <h5 className="mb-2 font-bold text-slate-900">Learning Outcomes</h5>
+              <ul className="mb-4 list-disc space-y-2 pl-6 text-slate-600">
+                {course.learningOutcomes.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </>
+          )}
+
+          {course.references?.length > 0 && (
+            <>
+              <h5 className="mb-2 font-bold text-slate-900">References</h5>
+              <ul className="list-disc space-y-2 pl-6 text-sm text-slate-500">
+                {course.references.map((ref) => (
+                  <li key={ref}>{ref}</li>
+                ))}
+              </ul>
+            </>
+          )}
         </div>
       ))}
     </div>

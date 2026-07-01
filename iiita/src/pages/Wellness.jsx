@@ -12,7 +12,6 @@ const sideLinks = [
   ["toolkit", "Wellness Toolkit"],
   ["staff", "For Faculty & Wardens"],
   ["faq", "FAQ"],
-  ["stories", "Stories"],
 ];
 
 const routerOptions = {
@@ -77,6 +76,17 @@ export default function Wellness() {
   const [active, setActive] = useState(null);
   const [openFaq, setOpenFaq] = useState(0);
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <>
       <section className="bg-gradient-to-br from-blue-950 via-blue-900 to-slate-950 py-20 text-white">
@@ -136,38 +146,23 @@ export default function Wellness() {
       <section className="bg-slate-50 pb-20">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[280px_1fr]">
           <aside>
-            <nav className="sticky top-24 rounded-3xl border border-slate-200 bg-white p-4 shadow-sm">
+            <nav className="sticky top-24 max-h-[calc(100vh-7rem)] overflow-y-auto rounded-3xl border border-slate-200 bg-white p-4 shadow-sm">
               <p className="mb-3 px-4 text-xs font-bold uppercase tracking-widest text-slate-500">
                 On this page
               </p>
 
               {sideLinks.map(([id, label]) => (
-                <a
+                <button
                   key={id}
-                  href={`#${id}`}
-                  className="block rounded-xl px-4 py-3 text-sm font-medium text-slate-600 hover:bg-blue-50 hover:text-blue-700"
+                  type="button"
+                  onClick={() => scrollToSection(id)}
+                  className="block w-full rounded-xl px-4 py-3 text-left text-sm font-medium text-slate-600 transition hover:bg-blue-50 hover:text-blue-700"
                 >
                   {label}
-                </a>
+                </button>
               ))}
 
-              <div className="mt-5 rounded-2xl bg-blue-50 p-4">
-                <p className="mb-2 text-xs font-bold uppercase tracking-widest text-blue-700">
-                  Quick Help
-                </p>
-                <a
-                  href="tel:14416"
-                  className="block text-sm font-semibold text-blue-800"
-                >
-                  Tele-MANAS · 14416
-                </a>
-                <a
-                  href="tel:+910000000000"
-                  className="mt-1 block text-sm font-semibold text-blue-800"
-                >
-                  Campus 24×7 · [number]
-                </a>
-              </div>
+              
             </nav>
           </aside>
 
@@ -516,9 +511,7 @@ export default function Wellness() {
                 >
                   <button
                     type="button"
-                    onClick={() =>
-                      setOpenFaq(openFaq === index ? -1 : index)
-                    }
+                    onClick={() => setOpenFaq(openFaq === index ? -1 : index)}
                     className="flex w-full items-center justify-between px-5 py-4 text-left font-semibold text-slate-900"
                   >
                     {question}
@@ -534,18 +527,7 @@ export default function Wellness() {
               ))}
             </Section>
 
-            <Section id="stories" title="Student Stories">
-              <div className="rounded-3xl bg-gradient-to-r from-blue-900 to-blue-700 p-8 text-white">
-                <div className="mb-3 text-yellow-300">★★★★★</div>
-                <p className="mb-4 text-lg italic leading-relaxed">
-                  “Reaching out to the counselling cell was the best decision of
-                  my second year. I wish I'd known sooner how much support was
-                  here.”
-                </p>
-                <b>Anonymous Student</b>
-                <p className="text-sm text-blue-100">B.Tech, 2nd Year</p>
-              </div>
-            </Section>
+            
           </main>
         </div>
       </section>
@@ -555,7 +537,7 @@ export default function Wellness() {
 
 function Section({ id, title, children }) {
   return (
-    <section id={id} className="scroll-mt-28">
+    <section id={id} className="scroll-mt-32">
       <h3 className="mb-4 text-2xl font-bold text-blue-900">{title}</h3>
       <div className="leading-relaxed text-slate-700">{children}</div>
     </section>

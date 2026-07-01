@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <>
       <section className="bg-gradient-to-br from-blue-950 via-blue-900 to-slate-950 text-white py-20">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto ">
           <div className="text-sm text-blue-200 mb-4">
             <Link to="/" className="hover:text-white">
               Home
@@ -29,7 +29,7 @@ export default function Contact() {
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-10">
+          <div className=" gap-10">
             <div>
               <span className="text-blue-700 font-semibold uppercase tracking-wide text-sm">
                 Get in Touch
@@ -60,18 +60,18 @@ export default function Contact() {
                     <b className="block text-slate-900">Email</b>
                     <span className="text-slate-600">
                       <a
-                        href="mailto:thrive@iiita.ac.in"
+                        href="deanoffice.sa@iiita.ac.in"
                         className="text-blue-700 hover:underline"
                       >
-                        thrive@iiita.ac.in
+                        deanoffice.sa@iiita.ac.in
                       </a>{" "}
                       ·{" "}
-                      <a
-                        href="mailto:contact@iiita.ac.in"
+                      {/* <a
+                        href="deanoffice.sa@iiita.ac.in"
                         className="text-blue-700 hover:underline"
                       >
-                        contact@iiita.ac.in
-                      </a>
+                        deanoffice.sa@iiita.ac.in
+                      </a> */}
                     </span>
                   </div>
                 </div>
@@ -98,7 +98,7 @@ export default function Contact() {
               
             </div>
 
-            <div>
+            {/* <div>
               <div className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm mb-6">
                 <h3 className="text-2xl font-bold text-slate-900 mb-6">
                   Student Support Form
@@ -146,7 +146,7 @@ export default function Contact() {
                   </button>
                 </form>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="lg:col-span-2 py-10">
             <iframe

@@ -3,63 +3,54 @@ import { Link } from "react-router-dom";
 function FeaturedInitiatives() {
   const initiatives = [
     {
-      icon: "🎓",
       title: "Minor Programs",
       desc: "Broaden your expertise with structured minor tracks across disciplines, designed for flexibility and depth.",
-      link: "/programs",
+      link: "/minors",
       color: "blue",
     },
     {
-      icon: "🏅",
       title: "Honours Programs",
       desc: "Push beyond the standard curriculum with research-intensive honours pathways and advanced electives.",
-      link: "/programs",
+      link: "/honours",
       color: "green",
     },
     {
-      icon: "🤝",
       title: "Peer Mentorship",
       desc: "Senior students guide juniors through academics, campus life and personal growth in trusted pairings.",
-      link: "/mentorship",
+      link: "/underconstruction",
       color: "blue",
     },
     {
-      icon: "👩‍🏫",
       title: "Faculty Mentorship",
       desc: "Every student is matched with a faculty mentor for sustained academic and career guidance.",
       link: "/mentorship",
       color: "blue",
     },
     {
-      icon: "🧠",
       title: "Mental Wellness",
-      desc: "Confidential counselling, stress management, awareness drives and 24×7 crisis support.",
+      desc: "Confidential counselling, stress management, awareness drives and support services for student well-being.",
       link: "/wellness",
       color: "green",
     },
     {
-      icon: "🌍",
       title: "Student Mobility",
       desc: "Semester exchange, credit transfer and summer schools with partner institutions worldwide.",
       link: "/mobility",
       color: "blue",
     },
     {
-      icon: "💼",
       title: "Internships",
       desc: "Industry, research and international internships with end-to-end tracking and support.",
-      link: "/internships",
+      link: "https://internship.iiita.ac.in/",
       color: "blue",
     },
     {
-      icon: "♿",
       title: "Inclusive Education",
       desc: "Accessibility services, assistive technologies and accommodations for our Divyangjan students.",
       link: "/inclusive",
       color: "green",
     },
     {
-      icon: "🌱",
       title: "Ecological Council",
       desc: "Green-campus drives, sustainability projects and a student-led culture of environmental care.",
       link: "/ecological",
@@ -82,7 +73,7 @@ function FeaturedInitiatives() {
           </h2>
 
           <p className="mt-4 text-slate-300">
-            Ten interconnected pillars that support the whole student —
+            Nine interconnected pillars that support the whole student —
             academically, professionally, socially and personally.
           </p>
         </div>
@@ -103,17 +94,8 @@ function FeaturedInitiatives() {
               />
 
               <div className="p-6">
-                <div
-                  className={`flex h-14 w-14 items-center justify-center rounded-2xl text-2xl ${
-                    item.color === "green"
-                      ? "bg-emerald-400/15 text-emerald-200"
-                      : "bg-blue-500/15 text-blue-200"
-                  }`}
-                >
-                  {item.icon}
-                </div>
-
-                <h3 className="mt-6 text-xl font-bold text-white">
+               
+                <h3 className="mt-4 text-xl font-bold text-white">
                   {item.title}
                 </h3>
 

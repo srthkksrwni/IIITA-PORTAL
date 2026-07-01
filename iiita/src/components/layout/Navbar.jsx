@@ -59,8 +59,8 @@ function Navbar() {
               PWD Cell
             </Link>
 
-            <Link to="/resources" onClick={scrollTop} className="transition hover:text-white">
-              Resources
+            <Link to="/ecological" onClick={scrollTop} className="transition hover:text-white">
+              Ecological Council
             </Link>
 
             <Link to="/internships" onClick={scrollTop} className="transition hover:text-white">
@@ -86,13 +86,13 @@ function Navbar() {
               Student Initiative
             </a>
 
-            <Link
+            {/* <Link
               to="/internships"
               onClick={scrollTop}
               className="flex h-14 w-36 items-center justify-center rounded-full bg-blue-500 text-center text-sm font-semibold text-white shadow-lg shadow-blue-500/30 transition hover:-translate-y-0.5 hover:bg-blue-400"
             >
               Apply Now
-            </Link>
+            </Link> */}
           </div>
         </div>
 
