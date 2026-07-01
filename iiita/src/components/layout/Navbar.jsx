@@ -55,7 +55,7 @@ function Navbar() {
             </Link>
 
             
-            <Link to="https://silly-paletas-045b9b.netlify.app/" target="_blank" onClick={scrollTop} className="transition hover:text-white">
+            <Link to="https://friendly-tiramisu-879cee.netlify.app/" target="_blank" onClick={scrollTop} className="transition hover:text-white">
               PWD Cell
             </Link>
 
