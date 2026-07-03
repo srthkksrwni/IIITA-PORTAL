@@ -1,4 +1,4 @@
-# THRIVE @ IIITA — Implementation Reference
+# IIITA — Implementation Reference
 
 **Office for Students' Holistic Growth, Inclusive Care & Mental Wellness**
 Indian Institute of Information Technology, Allahabad · Prof. Sonali Agarwal, Professor-in-Charge
@@ -10,9 +10,9 @@ This document accompanies the working front-end (13 HTML pages + shared CSS/JS) 
 
 ## 1. Recommended Website Name
 
-The build uses **THRIVE @ IIITA** as the working brand. Ten candidate names:
+The build uses **IIITA** as the working brand. Ten candidate names:
 
-1. THRIVE @ IIITA *(used in this build)*
+1. IIITA *(used in this build)*
 2. IIITA Thrive360
 3. Student Growth & Wellness Office
 4. Student Success and Wellbeing Centre

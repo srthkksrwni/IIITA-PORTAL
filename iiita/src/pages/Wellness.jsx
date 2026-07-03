@@ -99,7 +99,7 @@ export default function Wellness() {
           </div>
 
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-blue-200">
-            THRIVE @ IIITA · Care & Wellness
+            Care & Wellness
           </p>
 
           <h1 className="mb-6 text-4xl font-bold md:text-6xl">

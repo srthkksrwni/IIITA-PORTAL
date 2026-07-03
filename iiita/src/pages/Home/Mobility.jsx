@@ -36,7 +36,7 @@ function Mobility() {
               T
             </span>
             <span>
-              <b className="block text-lg">THRIVE @ IIITA</b>
+              <b className="block text-lg">IIITA</b>
               <span className="text-sm text-slate-500">
                 Holistic Growth · Inclusive Care · Mental Wellness
               </span>
@@ -194,7 +194,7 @@ function Mobility() {
 
       <footer className="bg-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-4 py-10">
-          <h3 className="text-xl font-bold mb-2">THRIVE @ IIITA</h3>
+          <h3 className="text-xl font-bold mb-2">IIITA</h3>
           <p className="text-slate-300 max-w-2xl">
             The single point of access for student development, well-being,
             inclusion and global opportunity at IIIT Allahabad.

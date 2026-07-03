@@ -23,7 +23,7 @@ function FeaturedInitiatives() {
     {
       title: "Faculty Mentorship",
       desc: "Every student is matched with a faculty mentor for sustained academic and career guidance.",
-      link: "/mentorship",
+      link: "/underconstruction",
       color: "blue",
     },
     {
@@ -35,7 +35,7 @@ function FeaturedInitiatives() {
     {
       title: "Student Mobility",
       desc: "Semester exchange, credit transfer and summer schools with partner institutions worldwide.",
-      link: "/mobility",
+      link: "/underconstruction",
       color: "blue",
     },
     {
@@ -47,7 +47,7 @@ function FeaturedInitiatives() {
     {
       title: "Inclusive Education",
       desc: "Accessibility services, assistive technologies and accommodations for our Divyangjan students.",
-      link: "/inclusive",
+      link: "/underconstruction",
       color: "green",
     },
     {
